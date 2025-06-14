@@ -74,6 +74,7 @@ export default {
 					green: '#00ff88',
 					pink: '#ff0080',
 					yellow: '#ffff00',
+					orange: '#ff8c00',
 				},
 				neon: {
 					blue: 'rgba(0, 212, 255, 0.8)',

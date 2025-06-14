@@ -62,9 +62,10 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                 <img
                   src={project.imageUrl}
                   alt={project.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-auto object-contain max-w-full"
+                  style={{ maxHeight: '70vh' }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
               </motion.div>
 
               {/* Description */}
@@ -152,7 +153,7 @@ export const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) =>
                     className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-cyber-blue to-cyber-purple hover:from-cyber-purple hover:to-cyber-blue rounded-lg transition-all duration-500 text-white font-medium"
                   >
                     <Link className="w-5 h-5" />
-                    <span>Live Demo</span>
+                    <span>Website</span>
                   </motion.button>
                 )}
               </motion.div>

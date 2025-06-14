@@ -1,0 +1,540 @@
+/* Mobile Optimization Styles */
+
+/* Ensure proper spacing from navigation */
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Bottom navigation spacing */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px;
+  }
+
+  /* Last section needs extra padding for bottom nav */
+  section:last-of-type {
+    padding-bottom: 100px !important;
+  }
+}
+
+/* Navigation fixes */
+.nav-mobile {
+  background: rgba(0, 0, 0, 0.9) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Hero section mobile fixes */
+@media (max-width: 768px) {
+  /* Prevent overlapping with navigation */
+  section:first-of-type {
+    padding-top: 5rem !important;
+  }
+
+  /* Hero Section Mobile */
+  .hero-mobile {
+    padding: 1rem;
+    min-height: calc(100vh - 4rem);
+  }
+
+  /* About section two-container layout mobile optimization */
+  .about-mobile .grid {
+    grid-template-columns: 1fr !important; /* Stack containers on mobile */
+    gap: 1.5rem !important;
+  }
+
+  .about-mobile img[alt="Dhruba Kumar Agarwalla"] {
+    width: 12rem !important; /* 192px - larger since it has its own container */
+    height: 15rem !important; /* 240px - portrait aspect ratio */
+    max-width: 100% !important;
+  }
+
+  /* Responsive text sizing */
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  h2 {
+    font-size: 1.25rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  h3 {
+    font-size: 1.125rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  /* Stats grid mobile */
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  /* Button improvements */
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+  }
+
+  .hero-button {
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.75rem 1.5rem !important;
+  }
+
+  /* Navigation Mobile */
+  .nav-mobile {
+    padding: 1rem;
+  }
+
+  .nav-logo {
+    font-size: 1.25rem;
+  }
+
+  /* Projects Section Mobile */
+  .projects-mobile {
+    padding: 3rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    max-width: 100% !important;
+  }
+
+  .project-card {
+    padding: 0.75rem !important; /* Much more compact card padding */
+    margin: 0;
+  }
+
+  /* Make project card content VERY compact for mobile */
+  .project-card .flex.justify-between.items-start {
+    margin-bottom: 0.5rem !important; /* Much smaller spacing */
+  }
+
+  .project-card h3 {
+    font-size: 1rem !important; /* Much smaller title */
+    line-height: 1.1 !important;
+  }
+
+  .project-card p {
+    font-size: 0.75rem !important; /* Much smaller description text */
+    line-height: 1.3 !important;
+    margin-bottom: 0.5rem !important; /* Much tighter spacing */
+  }
+
+  /* Technology tags very compact */
+  .project-card .flex.flex-wrap {
+    gap: 0.25rem !important; /* Minimal gap between tech tags */
+    margin-bottom: 0.5rem !important; /* Much tighter spacing */
+  }
+
+  .project-card .flex.flex-wrap span {
+    padding: 0.125rem 0.375rem !important; /* Very compact padding */
+    font-size: 0.625rem !important; /* Much smaller tech tag text */
+  }
+
+  /* Buttons very compact */
+  .project-card .flex.gap-3 {
+    gap: 0.375rem !important; /* Minimal button gap */
+  }
+
+  .project-card .flex.gap-3 button {
+    font-size: 0.625rem !important; /* Much smaller button text */
+  }
+
+  .project-card .flex.gap-3 button svg {
+    width: 0.75rem !important; /* Much smaller icons */
+    height: 0.75rem !important;
+  }
+
+  /* Reduce arrow icon size */
+  .project-card .p-2.rounded-full {
+    padding: 0.375rem !important; /* Smaller arrow container */
+  }
+
+  .project-card .p-2.rounded-full svg {
+    width: 0.75rem !important; /* Smaller arrow icon */
+    height: 0.75rem !important;
+  }
+
+  .project-title {
+    font-size: 1.5rem !important;
+    line-height: 1.2;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .project-tech-tags {
+    gap: 0.5rem;
+  }
+
+  .project-tech-tag {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  .project-buttons {
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  /* About Section Mobile */
+  .about-mobile {
+    padding: 3rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    max-width: 100% !important;
+  }
+
+  .about-story-card {
+    padding: 1.5rem !important;
+    margin-bottom: 2rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+  }
+
+  .achievement-card {
+    padding: 1rem !important;
+  }
+
+  .methodology-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .methodology-card {
+    padding: 1rem !important;
+  }
+
+  /* Tech Stack Mobile */
+  .tech-mobile {
+    padding: 3rem 1rem;
+  }
+
+  .tech-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  .tech-category-card {
+    padding: 1.5rem !important;
+  }
+
+  .tech-category-title {
+    font-size: 1.25rem !important;
+  }
+
+  .tech-item {
+    margin-bottom: 1rem;
+  }
+
+  .tech-item-name {
+    font-size: 0.95rem;
+  }
+
+  .tech-item-description {
+    font-size: 0.8rem;
+  }
+
+  /* Contact Section Mobile */
+  .contact-mobile {
+    padding: 3rem 1rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  .contact-info-card {
+    padding: 1rem !important;
+  }
+
+  .contact-social-card {
+    padding: 1rem !important;
+  }
+
+  .collaboration-card {
+    padding: 1.25rem !important;
+  }
+
+  /* Modal Mobile */
+  .modal-mobile {
+    margin: 1rem;
+    max-height: 90vh;
+    width: calc(100vw - 2rem) !important;
+    max-width: none !important;
+  }
+
+  .modal-content {
+    padding: 1.5rem !important;
+  }
+
+  .modal-title {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  .modal-image {
+    height: 200px !important;
+  }
+
+  .modal-tech-grid {
+    gap: 0.5rem;
+  }
+
+  .modal-tech-tag {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+
+  .modal-highlights-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .modal-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Loading Screen Mobile */
+  .loading-mobile {
+    padding: 2rem 1rem;
+  }
+
+  .loading-title {
+    font-size: 2.5rem !important;
+  }
+
+  .loading-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .loading-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .loading-stat-card {
+    padding: 0.75rem !important;
+  }
+
+  /* Scroll to Top Mobile */
+  .scroll-to-top-mobile {
+    bottom: 1rem !important;
+    left: 1rem !important;
+    padding: 0.75rem !important;
+  }
+
+  /* Glass Card Mobile */
+  .glass-card-mobile {
+    backdrop-filter: blur(8px) !important;
+    border-radius: 1rem !important;
+  }
+
+  /* Text Sizes Mobile */
+  .text-mobile-xl {
+    font-size: 1.25rem !important;
+  }
+
+  .text-mobile-lg {
+    font-size: 1.125rem !important;
+  }
+
+  .text-mobile-base {
+    font-size: 1rem !important;
+  }
+
+  .text-mobile-sm {
+    font-size: 0.875rem !important;
+  }
+
+  .text-mobile-xs {
+    font-size: 0.75rem !important;
+  }
+
+  /* Spacing Mobile */
+  .spacing-mobile-tight {
+    padding: 1rem !important;
+  }
+
+  .spacing-mobile-normal {
+    padding: 1.5rem !important;
+  }
+
+  .spacing-mobile-loose {
+    padding: 2rem !important;
+  }
+
+  /* Animation Performance Mobile */
+  .reduce-motion {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  /* Extra small profile photo in separate container */
+  img[alt="Dhruba Kumar Agarwalla"] {
+    width: 10rem !important; /* 160px */
+    height: 12rem !important; /* 192px */
+    max-width: 100% !important;
+  }
+
+  .project-card {
+    padding: 0.5rem !important; /* Ultra compact card padding */
+  }
+
+  /* ULTRA compact project card content for very small screens */
+  .project-card .flex.justify-between.items-start {
+    margin-bottom: 0.25rem !important; /* Ultra minimal spacing */
+  }
+
+  .project-card h3 {
+    font-size: 0.875rem !important; /* Ultra small title */
+    line-height: 1.0 !important;
+  }
+
+  .project-card p {
+    font-size: 0.625rem !important; /* Ultra small description */
+    line-height: 1.2 !important;
+    margin-bottom: 0.25rem !important; /* Ultra tight spacing */
+  }
+
+  .project-card .flex.flex-wrap {
+    gap: 0.125rem !important; /* Ultra minimal gap between tech tags */
+    margin-bottom: 0.25rem !important; /* Ultra tight spacing */
+  }
+
+  .project-card .flex.flex-wrap span {
+    padding: 0.1rem 0.25rem !important; /* Ultra compact padding */
+    font-size: 0.5rem !important; /* Ultra small tech tag text */
+  }
+
+  .project-card .flex.gap-3 {
+    gap: 0.25rem !important; /* Ultra minimal button gap */
+  }
+
+  .project-card .flex.gap-3 button {
+    font-size: 0.5rem !important; /* Ultra small button text */
+  }
+
+  .project-card .flex.gap-3 button svg {
+    width: 0.625rem !important; /* Ultra small icons */
+    height: 0.625rem !important;
+  }
+
+  /* Ultra compact arrow icon */
+  .project-card .p-2.rounded-full {
+    padding: 0.25rem !important; /* Ultra small arrow container */
+  }
+
+  .project-card .p-2.rounded-full svg {
+    width: 0.625rem !important; /* Ultra small arrow icon */
+    height: 0.625rem !important;
+  }
+
+  .about-title,
+  .tech-title,
+  .contact-title {
+    font-size: 2rem !important;
+  }
+
+  .modal-mobile {
+    margin: 0.5rem;
+    width: calc(100vw - 1rem) !important;
+  }
+
+  .modal-content {
+    padding: 1rem !important;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-mobile {
+    min-height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .touch-friendly {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .project-card {
+    transform: none !important;
+  }
+
+  .project-card:active {
+    transform: scale(0.98) !important;
+  }
+
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -10,8 +10,8 @@ interface ProjectsSectionProps {
 
 export const ProjectsSection = ({ projects, onProjectClick }: ProjectsSectionProps) => {
   return (
-    <section className="py-20 relative">
-      <div className="container mx-auto px-6">
+    <section id="projects" className="py-8 sm:py-12 md:py-20 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -19,15 +19,16 @@ export const ProjectsSection = ({ projects, onProjectClick }: ProjectsSectionPro
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-orbitron font-bold mb-6 text-cyber">
-            Featured Projects
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-orbitron font-bold mb-4 sm:mb-6 text-cyber">
+            AI-Orchestrated Projects
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Explore my latest creations - from AI-powered tools to full-stack applications
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
+            Witness the power of AI-driven development: 115,000+ lines of production-ready code
+            built through advanced prompt engineering and intelligent collaboration, including this very portfolio
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-7xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}

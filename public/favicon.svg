@@ -1,0 +1,28 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a2e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cyber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+
+  <!-- Cyber border -->
+  <rect x="1" y="1" width="30" height="30" rx="7" stroke="url(#cyber)" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Main "D" letter -->
+  <path d="M7 7 L7 25 L16 25 C21 25 24 21 24 16 C24 11 21 7 16 7 L7 7 Z M9.5 9.5 L16 9.5 C19.5 9.5 21.5 12 21.5 16 C21.5 20 19.5 22.5 16 22.5 L9.5 22.5 L9.5 9.5 Z" fill="url(#cyber)"/>
+
+  <!-- Tech accent -->
+  <rect x="25" y="8" width="3" height="1" fill="#00d4ff" opacity="0.8"/>
+  <rect x="25" y="12" width="2" height="1" fill="#8b5cf6" opacity="0.6"/>
+  <rect x="25" y="16" width="3" height="1" fill="#00d4ff" opacity="0.8"/>
+  <rect x="25" y="20" width="2" height="1" fill="#8b5cf6" opacity="0.6"/>
+  <rect x="25" y="24" width="1" height="1" fill="#00d4ff" opacity="0.4"/>
+</svg>

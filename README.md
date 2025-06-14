@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# 🚀 Dhruba Kumar Agarwalla - Portfolio
 
-## Project info
+## AI-Orchestrated Full-Stack Developer
 
-**URL**: https://lovable.dev/projects/a401d874-c9de-44f2-a7b6-3f5b914f3f1d
+A revolutionary portfolio showcasing the power of AI-driven development through 115,000+ lines of production-ready code built with $0 budget.
 
-## How can I edit this code?
+### ✨ Portfolio Highlights
 
-There are several ways of editing your application.
+- **🤖 AI-Orchestrated Development**: Pioneering the future of human-AI collaboration
+- **💰 Zero Budget, Maximum Impact**: 115,000+ lines of code with $0 investment
+- **🏆 Award-Winning Projects**: 2nd place CSS Hacks Hackathon winner
+- **⚡ Ultra-Fast Development**: 75K lines in 3-4 weeks, 40K lines in <1 week
+- **🎯 Real-World Impact**: Projects deployed and used at NIT Silchar
 
-**Use Lovable**
+### 🛠️ Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a401d874-c9de-44f2-a7b6-3f5b914f3f1d) and start prompting.
+- **Frontend**: React, Next.js 14, TypeScript, Tailwind CSS, Framer Motion
+- **Backend**: Node.js, Firebase, Google Sheets API
+- **AI Integration**: Groq AI, Google Gemini, HuggingFace
+- **Tools**: Vite, shadcn/ui, Recharts, Cloudinary
+- **Design**: Cyberpunk aesthetic with glassmorphism effects
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🎨 Features
 
-**Use your preferred IDE**
+- **Responsive Design**: Optimized for all devices
+- **3D Card Effects**: Enhanced hover animations and interactions
+- **Smooth Navigation**: Seamless scrolling and section transitions
+- **Loading Animation**: Professional loading screen with progress tracking
+- **Interactive Elements**: Hover effects, animations, and micro-interactions
+- **Performance Optimized**: Fast loading and smooth animations
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 📱 Sections
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. **Hero**: Introduction with key statistics and achievements
+2. **Projects**: Detailed showcase of Event Manager and GitIQ
+3. **About**: AI collaboration journey and methodology
+4. **Tech Stack**: Comprehensive technology expertise
+5. **Contact**: Professional contact information and collaboration opportunities
 
-Follow these steps:
+### 🚀 Featured Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+#### NIT Silchar Event Manager (75,000+ lines)
+- Comprehensive event management platform
+- Real-time QR code attendance system
+- Google Sheets integration and data pipeline
+- Reduced registration time by 70%
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+#### GitIQ - AI Repository Insights (40,000+ lines)
+- Multi-AI provider integration
+- Ultra-fast commit analysis (0.12s per commit)
+- Advanced repository health scoring
+- Built in less than a week
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🎯 Development Philosophy
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+This portfolio represents a new paradigm in development - proving that through strategic AI collaboration, prompt engineering, and intelligent resource utilization, one can build enterprise-level applications without traditional coding knowledge.
+
+### 📧 Contact
+
+- **Email**: dhrubagarwala67@gmail.com
+- **GitHub**: [DhrubaAgarwalla](https://github.com/DhrubaAgarwalla)
+- **LinkedIn**: [Dhruba Kumar Agarwalla](https://www.linkedin.com/in/dhruba-kumar-agarwalla-7a5346270/)
+- **Location**: NIT Silchar, Assam, India
+
+### 🏃‍♂️ Quick Start
+
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Navigate to project directory
+cd stellar-code-lab
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### 🌟 Achievements
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- 🥈 2nd Place - CSS Hacks Hackathon, NIT Silchar CS Department
+- 🚀 115,000+ lines of AI-orchestrated code
+- 💰 $0 budget across all projects
+- ⚡ Record development speeds through AI collaboration
+- 🎓 2nd Year Civil Engineering Student pioneering AI-driven development
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+**"Building the Future, One AI Collaboration at a Time"**
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a401d874-c9de-44f2-a7b6-3f5b914f3f1d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+*Created by Dhruba Kumar Agarwalla - AI-Orchestrated Full-Stack Developer*

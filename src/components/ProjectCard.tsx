@@ -12,13 +12,19 @@ interface ProjectCardProps {
 export const ProjectCard = ({ project, onClick, index }: ProjectCardProps) => {
   return (
     <motion.div
-      whileHover={{ 
-        y: -10,
-        rotateX: 5,
-        rotateY: index % 2 === 0 ? 5 : -5,
+      whileHover={{
+        y: -15,
+        rotateX: 8,
+        rotateY: index % 2 === 0 ? 8 : -8,
+        scale: 1.02,
+        z: 50,
       }}
       whileTap={{ scale: 0.98 }}
-      className="glass-card p-8 cursor-pointer group hover:bg-white/10 transition-all duration-500 relative overflow-hidden"
+      className="glass-card p-4 sm:p-6 md:p-8 cursor-pointer group hover:bg-white/10 transition-all duration-500 relative overflow-hidden h-full flex flex-col"
+      style={{
+        transformStyle: 'preserve-3d',
+        perspective: '1000px'
+      }}
       onClick={onClick}
     >
       {/* Animated background gradient */}
@@ -27,42 +33,47 @@ export const ProjectCard = ({ project, onClick, index }: ProjectCardProps) => {
         initial={false}
       />
       
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col h-full">
         <div className="flex justify-between items-start mb-6">
-          <motion.h3 
-            className="text-2xl font-orbitron font-bold text-white group-hover:text-cyber transition-colors duration-300"
+          <motion.h3
+            className="text-lg sm:text-xl md:text-2xl font-orbitron font-bold text-white group-hover:text-cyber transition-colors duration-300 flex-1 leading-tight"
             whileHover={{ scale: 1.05 }}
           >
             {project.title}
           </motion.h3>
-          
+
           <motion.div
             whileHover={{ scale: 1.1, rotate: 45 }}
-            className="p-2 rounded-full bg-white/10 group-hover:bg-cyber-blue/20 transition-all duration-300"
+            className="p-2 rounded-full bg-white/10 group-hover:bg-cyber-blue/20 transition-all duration-300 flex-shrink-0"
           >
             <ArrowUp className="w-4 h-4 transform -rotate-45" />
           </motion.div>
         </div>
 
-        <p className="text-gray-300 mb-6 leading-relaxed">
+        <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 leading-relaxed flex-1">
           {project.description}
         </p>
 
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.technologies.map((tech, techIndex) => (
+        <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6">
+          {project.technologies.slice(0, 4).map((tech, techIndex) => (
             <motion.span
               key={tech}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: techIndex * 0.1 }}
-              className="px-3 py-1 bg-white/10 rounded-full text-sm text-cyber-blue border border-cyber-blue/30 hover:bg-cyber-blue/20 transition-colors duration-300"
+              className="px-2 sm:px-3 py-1 bg-white/10 rounded-full text-xs sm:text-sm text-cyber-blue border border-cyber-blue/30 hover:bg-cyber-blue/20 transition-colors duration-300"
             >
               {tech}
             </motion.span>
           ))}
+          {project.technologies.length > 4 && (
+            <span className="px-2 sm:px-3 py-1 bg-white/5 rounded-full text-xs sm:text-sm text-gray-400 border border-gray-600">
+              +{project.technologies.length - 4} more
+            </span>
+          )}
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex gap-3 sm:gap-4 mt-auto">
           <motion.button
             whileHover={{ scale: 1.05, x: 5 }}
             className="flex items-center gap-2 text-gray-300 hover:text-cyber-blue transition-colors duration-300"
@@ -74,7 +85,7 @@ export const ProjectCard = ({ project, onClick, index }: ProjectCardProps) => {
             <Github className="w-4 h-4" />
             <span className="text-sm">Code</span>
           </motion.button>
-          
+
           {project.demoUrl && (
             <motion.button
               whileHover={{ scale: 1.05, x: 5 }}
@@ -85,7 +96,7 @@ export const ProjectCard = ({ project, onClick, index }: ProjectCardProps) => {
               }}
             >
               <Link className="w-4 h-4" />
-              <span className="text-sm">Demo</span>
+              <span className="text-sm">Website</span>
             </motion.button>
           )}
         </div>
