@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { ProjectModal } from "@/components/ProjectModal";
@@ -56,6 +55,13 @@ const projects: Project[] = [
 const Index = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isLoaded, setIsLoaded] = useState(false);
+  
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   useEffect(() => {
     setIsLoaded(true);
@@ -63,13 +69,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden">
-      <ParticleBackground />
+      {/* Progress Bar */}
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-blue to-cyber-purple z-50 origin-left"
+        style={{ scaleX }}
+      />
       
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isLoaded ? 1 : 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.5 }}
         className="relative z-10"
+        style={{
+          background: "radial-gradient(ellipse at top, rgba(0, 212, 255, 0.1) 0%, transparent 50%), radial-gradient(ellipse at bottom, rgba(139, 92, 246, 0.1) 0%, transparent 50%)"
+        }}
       >
         <Hero />
         <ProjectsSection 
