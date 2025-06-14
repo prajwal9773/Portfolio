@@ -12,6 +12,7 @@ import { Navigation } from "@/components/Navigation";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { BottomNavigation } from "@/components/BottomNavigation";
+import Chatbot from "@/components/Chatbot";
 import { AnimatePresence } from "framer-motion";
 import "../styles/mobile.css";
 
@@ -109,7 +110,14 @@ const Index = () => {
         )}
       </AnimatePresence>
 
-      <div className="min-h-screen relative overflow-hidden">
+      <div
+        className="min-h-screen relative overflow-hidden page-container"
+        style={{
+          backgroundColor: '#0a0a0a',
+          background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%)',
+          backgroundAttachment: 'fixed'
+        }}
+      >
         <Navigation />
         <ParticleBackground />
 
@@ -118,6 +126,7 @@ const Index = () => {
           animate={{ opacity: isLoaded && !showLoading ? 1 : 0 }}
           transition={{ duration: 1 }}
           className="relative z-10"
+          style={{ backgroundColor: 'transparent' }}
         >
         <div id="home">
           <Hero />
@@ -148,6 +157,9 @@ const Index = () => {
           showLoading={showLoading}
           isProjectModalOpen={selectedProject !== null}
         />
+
+        {/* AI Chatbot */}
+        {!showLoading && <Chatbot />}
       </div>
     </>
   );
