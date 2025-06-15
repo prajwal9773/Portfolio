@@ -1,4 +1,4 @@
-# 🚀 Stellar Code Lab - AI-Orchestrated Portfolio
+# 🚀 AI-Orchestrated Portfolio
 
 <div align="center">
 
