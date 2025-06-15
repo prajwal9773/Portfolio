@@ -10,7 +10,11 @@ import {
 import { useChatbot } from '@/hooks/useChatbot';
 import { ChatMessage } from '@/types/chatbot';
 
-const Chatbot: React.FC = () => {
+interface ChatbotProps {
+  isProjectModalOpen?: boolean;
+}
+
+const Chatbot: React.FC<ChatbotProps> = ({ isProjectModalOpen = false }) => {
   const {
     isOpen,
     isLoading,
@@ -227,6 +231,11 @@ const Chatbot: React.FC = () => {
     </div>
   ));
 
+  // Hide chatbot when project modal is open
+  if (isProjectModalOpen) {
+    return null;
+  }
+
   return (
     <>
       {/* Chat Toggle Button */}
@@ -239,7 +248,7 @@ const Chatbot: React.FC = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={toggleChat}
-            className="fixed bottom-6 right-6 md:bottom-6 md:right-6 bottom-24 z-50 w-14 h-14 bg-gradient-to-br from-cyber-blue to-cyber-purple rounded-full shadow-2xl flex items-center justify-center hover:shadow-cyber-blue/25 transition-all duration-300"
+            className="fixed bottom-6 right-6 md:bottom-6 md:right-6 z-50 w-14 h-14 bg-gradient-to-br from-cyber-blue to-cyber-purple rounded-full shadow-2xl flex items-center justify-center hover:shadow-cyber-blue/25 transition-all duration-300"
           >
             <Bot className="w-6 h-6 text-white" />
           </motion.button>
@@ -253,7 +262,7 @@ const Chatbot: React.FC = () => {
             initial={{ opacity: 0, scale: 0.8, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.8, y: 20 }}
-            className="fixed bottom-6 right-6 md:bottom-6 md:right-6 bottom-24 z-50 w-96 h-[600px] md:w-96 w-[calc(100vw-2rem)] md:h-[600px] h-[calc(100vh-200px)] bg-black/90 backdrop-blur-xl border border-cyber-blue/30 rounded-2xl shadow-2xl overflow-hidden"
+            className="fixed bottom-6 right-6 md:bottom-6 md:right-6 z-50 w-96 h-[600px] md:w-96 w-[calc(100vw-2rem)] md:h-[600px] h-[calc(100vh-200px)] bg-black/90 backdrop-blur-xl border border-cyber-blue/30 rounded-2xl shadow-2xl overflow-hidden"
             style={{ maxHeight: 'calc(100vh - 120px)' }}
           >
             {/* Header */}

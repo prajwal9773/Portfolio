@@ -105,7 +105,7 @@ export const Navigation = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="lg:hidden absolute left-1/2 transform -translate-x-1/2 cursor-pointer"
+              className="lg:hidden absolute left-1/2 transform -translate-x-1/2 cursor-pointer mobile-portfolio-text"
               onClick={() => scrollToSection("#home")}
             >
               <div className="text-xl font-orbitron font-bold text-cyber">

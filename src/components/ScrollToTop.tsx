@@ -2,7 +2,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
 
-export const ScrollToTop = () => {
+interface ScrollToTopProps {
+  isProjectModalOpen?: boolean;
+}
+
+export const ScrollToTop = ({ isProjectModalOpen = false }: ScrollToTopProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -24,6 +28,11 @@ export const ScrollToTop = () => {
       behavior: "smooth"
     });
   };
+
+  // Hide scroll to top when project modal is open
+  if (isProjectModalOpen) {
+    return null;
+  }
 
   return (
     <AnimatePresence>

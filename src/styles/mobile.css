@@ -28,13 +28,33 @@ body {
 @media (max-width: 768px) {
   /* Prevent overlapping with navigation */
   section:first-of-type {
-    padding-top: 5rem !important;
+    padding-top: 4rem !important; /* Reduced from 5rem */
+    min-height: 85vh !important; /* Reduced height to create better spacing */
+    /* Move hero content lower on mobile */
+    align-items: flex-start !important;
+    padding-top: 8rem !important; /* Increased to push content lower */
   }
 
   /* Hero Section Mobile */
   .hero-mobile {
     padding: 1rem;
     min-height: calc(100vh - 4rem);
+  }
+
+  /* Move hero content to middle-lower position on mobile */
+  section:first-of-type .container {
+    margin-top: 15vh !important; /* Push content down from top */
+  }
+
+  /* Projects section mobile spacing fix */
+  #projects {
+    padding-top: 2rem !important; /* Reduced top padding */
+    padding-bottom: 3rem !important; /* Reduced bottom padding */
+  }
+
+  /* Reduce gap between hero and projects */
+  section:first-of-type + section {
+    margin-top: -2rem !important; /* Pull projects section up */
   }
 
   /* About section two-container layout mobile optimization */
@@ -94,9 +114,63 @@ body {
     font-size: 1.25rem;
   }
 
+  /* Fix Portfolio text centering in mobile navigation */
+  .mobile-portfolio-text {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10;
+    width: auto !important;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* Ensure parent container allows proper centering */
+  nav .flex.items-center.justify-between {
+    position: relative;
+  }
+
+  /* Additional mobile navigation fixes */
+  @media (max-width: 640px) {
+    .mobile-portfolio-text {
+      font-size: 1.125rem !important; /* Slightly smaller on very small screens */
+    }
+  }
+
+  /* Prevent layout shifts in mobile navigation */
+  nav {
+    min-height: 4rem; /* Ensure consistent height */
+  }
+
+  /* Ensure left and right elements don't interfere with center positioning */
+  nav .flex.items-center.justify-between > div:first-child {
+    flex-shrink: 0;
+    max-width: 35%; /* Limit width to prevent overlap */
+  }
+
+  nav .flex.items-center.justify-between > div:last-child {
+    flex-shrink: 0;
+    max-width: 35%; /* Limit width to prevent overlap */
+  }
+
   /* Projects Section Mobile */
   .projects-mobile {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem; /* Reduced from 3rem */
+  }
+
+  /* Better mobile section spacing */
+  section {
+    margin-bottom: 1rem !important; /* Reduce gaps between sections */
+  }
+
+  /* Specific spacing for projects section title */
+  #projects h2 {
+    margin-bottom: 2rem !important; /* Reduced from default */
+  }
+
+  #projects .text-center.mb-16 {
+    margin-bottom: 2rem !important; /* Reduced from mb-16 */
   }
 
   .projects-grid {
@@ -409,6 +483,29 @@ body {
 
 /* Extra small devices (phones in portrait) */
 @media (max-width: 480px) {
+  /* Further reduce hero section height on very small screens */
+  section:first-of-type {
+    padding-top: 6rem !important; /* Adjusted to maintain lower positioning */
+    min-height: 80vh !important; /* Smaller height */
+    align-items: flex-start !important;
+  }
+
+  /* Adjust container positioning for smaller screens */
+  section:first-of-type .container {
+    margin-top: 12vh !important; /* Slightly less margin for smaller screens */
+  }
+
+  /* Tighter spacing for projects section */
+  #projects {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Pull projects section even closer */
+  section:first-of-type + section {
+    margin-top: -3rem !important;
+  }
+
   .hero-title {
     font-size: 2rem !important;
   }
@@ -505,6 +602,15 @@ body {
     padding: 1.5rem 1rem;
   }
 
+  /* Adjust hero positioning for landscape */
+  section:first-of-type {
+    align-items: center !important; /* Center in landscape for better fit */
+  }
+
+  section:first-of-type .container {
+    margin-top: 5vh !important; /* Reduced margin for landscape */
+  }
+
   .hero-title {
     font-size: 2rem !important;
   }
@@ -536,5 +642,33 @@ body {
 
   .nav-item:hover {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Chatbot positioning fixes */
+@media (max-width: 768px) {
+  /* Ensure chatbot doesn't overlap with bottom navigation */
+  /* Target chatbot button specifically */
+  .fixed.z-50.w-14.h-14 {
+    bottom: 5.5rem !important; /* 88px - above bottom navigation */
+  }
+
+  /* Target chatbot window specifically */
+  .fixed.z-50.w-96 {
+    bottom: 5.5rem !important; /* 88px - above bottom navigation */
+  }
+
+  /* Adjust for very small screens */
+  @media (max-width: 480px) {
+    .fixed.z-50.w-14.h-14 {
+      bottom: 5rem !important; /* 80px - slightly less spacing on very small screens */
+      right: 1rem !important; /* 16px - closer to edge on small screens */
+    }
+
+    .fixed.z-50.w-96 {
+      bottom: 5rem !important; /* 80px - match button position */
+      right: 1rem !important; /* 16px - closer to edge on small screens */
+      width: calc(100vw - 2rem) !important; /* Full width minus margins */
+    }
   }
 }

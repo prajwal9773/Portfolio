@@ -152,14 +152,14 @@ const Index = () => {
         onClose={() => setSelectedProject(null)}
       />
 
-        <ScrollToTop />
+        <ScrollToTop isProjectModalOpen={selectedProject !== null} />
         <BottomNavigation
           showLoading={showLoading}
           isProjectModalOpen={selectedProject !== null}
         />
 
         {/* AI Chatbot */}
-        {!showLoading && <Chatbot />}
+        {!showLoading && <Chatbot isProjectModalOpen={selectedProject !== null} />}
       </div>
     </>
   );
