@@ -6,22 +6,22 @@ export const ContactSection = () => {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "dhrubagarwala67@gmail.com",
-      href: "mailto:dhrubagarwala67@gmail.com",
+      value: "prajwalkum03airs@gmail.com",
+      href: "mailto:prajwalkum03airs@gmail.com",
       color: "cyber-blue"
     },
     {
       icon: <MessageSquare className="w-5 h-5" />,
       label: "WhatsApp",
-      value: "+91 9395386870",
-      href: "https://wa.me/919395386870",
+      value: "+91 7004990508",
+      href: "https://wa.me/7004990508",
       color: "cyber-green"
     },
     {
       icon: <MapPin className="w-5 h-5" />,
       label: "Location",
-      value: "NIT Silchar, Assam, India",
-      href: "https://maps.google.com/maps?q=National+Institute+of+Technology+Silchar",
+      value: "IIIT Sricity, Chittor, India",
+      href: "https://www.google.com/maps/place/Indian+Institute+of+Information+Technology,+Sri+City,+Chittoor/@13.5555453,80.0240735,17z/data=!3m1!4b1!4m6!3m5!1s0x3a4d773f1e0f8721:0xadb0842ffc2719e4!8m2!3d13.5555453!4d80.0266484!16s%2Fm%2F0wbmm91?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D",
       color: "cyber-purple"
     }
   ];
@@ -30,14 +30,14 @@ export const ContactSection = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      href: "https://github.com/DhrubaAgarwalla",
+      href: "https://github.com/prajwal9773",
       color: "cyber-blue",
-      description: "115,000+ lines of AI-orchestrated code"
+      description: "My little inventions"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/dhruba-kumar-agarwalla-7a5346270/",
+      href: "https://www.linkedin.com/in/prajwal-kumar-b2798b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       color: "cyber-green",
       description: "Professional network & opportunities"
     }
@@ -51,7 +51,7 @@ export const ContactSection = () => {
     },
     {
       title: "Web Development",
-      description: "Build scalable applications through AI-driven development methodologies",
+      description: "Build scalable applications through AI-driven development.",
       icon: "🌐"
     },
     {
@@ -59,11 +59,6 @@ export const ContactSection = () => {
       description: "Join innovative teams looking for AI-first development approaches",
       icon: "🚀"
     },
-    {
-      title: "Learning & Mentoring",
-      description: "Share knowledge about AI collaboration and prompt engineering techniques",
-      icon: "📚"
-    }
   ];
 
   return (
@@ -81,7 +76,7 @@ export const ContactSection = () => {
             Let's Build the Future
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to explore the possibilities of AI-driven development? Let's connect and create something extraordinary together.
+            Ready to explore the possibilities of  development? Let's connect and create something extraordinary together.
           </p>
         </motion.div>
 
@@ -207,9 +202,9 @@ export const ContactSection = () => {
           className="text-center mt-16 pt-8 border-t border-white/10"
         >
           <p className="text-gray-400">
-            <span className="text-cyber-blue font-medium">Dhruba Kumar Agarwalla</span> • 
-            AI-Orchestrated Full-Stack Developer • 
-            <span className="text-cyber-green">Building the Future, One AI Collaboration at a Time</span>
+            <span className="text-cyber-blue font-medium">Prajwal kumar</span> • 
+             Full-Stack Developer • 
+            <span className="text-cyber-green">Building the Future, One at a Time</span>
           </p>
         </motion.div>
       </div>

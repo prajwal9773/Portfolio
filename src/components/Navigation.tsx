@@ -17,19 +17,19 @@ export const Navigation = () => {
   const socialLinks = [
     {
       icon: Github,
-      href: "https://github.com/DhrubaAgarwalla",
+      href: "https://github.com/prajwal9773",
       label: "GitHub",
       color: "hover:text-white"
     },
     {
       icon: Linkedin,
-      href: "https://www.linkedin.com/in/dhruba-kumar-agarwalla-7a5346270/",
+      href: "https://www.linkedin.com/in/prajwal-kumar-b2798b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       label: "LinkedIn",
       color: "hover:text-blue-400"
     },
     {
       icon: MessageCircle,
-      href: "https://wa.me/919395386870",
+      href: "https://wa.me/7004990508",
       label: "WhatsApp",
       color: "hover:text-green-400"
     }
@@ -89,14 +89,14 @@ export const Navigation = () => {
               onClick={() => scrollToSection("#home")}
             >
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyber-blue to-cyber-purple flex items-center justify-center group-hover:shadow-lg group-hover:shadow-cyber-blue/25 transition-all duration-300">
-                <span className="text-white font-orbitron font-bold text-lg">D</span>
+                <span className="text-white font-orbitron font-bold text-lg">P</span>
               </div>
               <div className="hidden lg:block">
                 <div className="text-xl font-orbitron font-bold text-white group-hover:text-cyber transition-colors duration-300">
-                  Dhruba Agarwalla
+                 prajwal kumar
                 </div>
                 <div className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                  AI-Orchestrated Developer
+                  Full Stack Developer
                 </div>
               </div>
             </motion.div>
@@ -168,7 +168,7 @@ export const Navigation = () => {
 
               {/* CTA Button */}
               <motion.a
-                href="mailto:dhrubagarwala67@gmail.com"
+                href="mailto:Prajwalkum03airs@gmail.com"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="hidden md:flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-cyber-blue to-cyber-purple rounded-lg text-white font-medium text-sm hover:shadow-lg hover:shadow-cyber-blue/25 transition-all duration-300"
@@ -179,7 +179,7 @@ export const Navigation = () => {
 
               {/* Mobile Contact Button */}
               <motion.a
-                href="mailto:dhrubagarwala67@gmail.com"
+                href="mailto:Prajwalkum03airs@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="lg:hidden p-2 rounded-lg bg-white/5 text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300"

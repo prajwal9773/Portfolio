@@ -4,13 +4,13 @@ import { Code, Database, Cloud, Cpu, Palette, Zap } from "lucide-react";
 export const TechStack = () => {
   const categories = [
     {
-      title: "AI-Assisted Frontend Development",
+      title: "Frontend Development",
       icon: <Palette className="w-6 h-6" />,
       color: "cyber-blue",
       technologies: [
-        { name: "React", level: "Advanced", description: "AI-orchestrated component architecture" },
-        { name: "Next.js 14", level: "Advanced", description: "Full-stack framework via AI collaboration" },
-        { name: "TypeScript", level: "Intermediate", description: "Type-safe development through AI guidance" },
+        { name: "React", level: "Medium", description: "frontend framework" },
+        { name: "Next.js 14", level: "beginer", description: "Frontend framework" },
+        { name: "TypeScript", level: "Intermediate", description: "Type-safe development" },
         { name: "Tailwind CSS", level: "Advanced", description: "AI-assisted utility-first styling" },
         { name: "Framer Motion", level: "Intermediate", description: "AI-guided smooth animations" }
       ]
@@ -20,11 +20,19 @@ export const TechStack = () => {
       icon: <Database className="w-6 h-6" />,
       color: "cyber-green",
       technologies: [
-        { name: "Node.js", level: "Advanced", description: "AI-orchestrated server-side development" },
-        { name: "Firebase", level: "Advanced", description: "AI-assisted real-time database & auth" },
-        { name: "Google Sheets API", level: "Intermediate", description: "AI-guided data integration" },
-        { name: "GitHub API", level: "Intermediate", description: "AI-powered repository analysis" },
-        { name: "RESTful APIs", level: "Advanced", description: "AI-assisted API design & integration" }
+        
+          { name: "Node.js", level: "Advanced", description: "Server-side JavaScript runtime for scalable backend services" },
+          { name: "Express.js", level: "Advanced", description: "Minimal and flexible Node.js web application framework" },
+          { name: "MongoDB", level: "Advanced", description: "NoSQL database for high-performance data storage and retrieval" },
+          { name: "PostgreSQL", level: "Intermediate", description: "Relational database with strong ACID compliance and indexing" },
+          { name: "SQL", level: "Advanced", description: "Structured query language for relational database operations" },
+          { name: "Redis", level: "Intermediate", description: "In-memory key-value store for caching and session management" },
+          { name: "Docker", level: "Intermediate", description: "Containerization for consistent and portable development environments" },
+          { name: "JWT", level: "Advanced", description: "Token-based authentication for secure API access" },
+          { name: "Prisma", level: "Intermediate", description: "Next-gen ORM for PostgreSQL and other SQL databases" },
+         
+        
+        
       ]
     },
     {
@@ -35,8 +43,6 @@ export const TechStack = () => {
         { name: "Groq AI", level: "Advanced", description: "Ultra-fast AI processing" },
         { name: "Google Gemini", level: "Advanced", description: "Multi-modal AI" },
         { name: "HuggingFace", level: "Intermediate", description: "Open-source AI models" },
-        { name: "Prompt Engineering", level: "Expert", description: "Strategic AI collaboration" },
-        { name: "Multi-Provider Integration", level: "Advanced", description: "Parallel AI processing" }
       ]
     },
     {
@@ -48,7 +54,9 @@ export const TechStack = () => {
         { name: "Cloudinary", level: "Intermediate", description: "Media management" },
         { name: "VS Code + AI", level: "Expert", description: "AI-enhanced development" },
         { name: "Git & GitHub", level: "Advanced", description: "Version control" },
-        { name: "Recharts", level: "Intermediate", description: "Data visualization" }
+        { name: "Recharts", level: "Intermediate", description: "Data visualization" },
+        { name: "Render", level: "Intermediate", description: "Deployment & hosting" },
+
       ]
     },
     {
@@ -57,7 +65,6 @@ export const TechStack = () => {
       color: "cyber-pink",
       technologies: [
         { name: "AI-Driven Architecture", level: "Expert", description: "System design through AI" },
-        { name: "Rapid Prototyping", level: "Advanced", description: "Fast iteration cycles" },
         { name: "Error Prevention", level: "Advanced", description: "Proactive debugging" },
         { name: "Resource Optimization", level: "Expert", description: "Maximum impact, zero cost" },
         { name: "Continuous Learning", level: "Expert", description: "Adapting to new technologies" }
@@ -68,11 +75,18 @@ export const TechStack = () => {
       icon: <Code className="w-6 h-6" />,
       color: "cyber-orange",
       technologies: [
-        { name: "QR Code Systems", level: "Advanced", description: "Attendance tracking" },
-        { name: "Email Automation", level: "Intermediate", description: "Gmail API integration" },
-        { name: "Data Pipelines", level: "Intermediate", description: "Real-time processing" },
-        { name: "Role-Based Access", level: "Advanced", description: "Security implementation" },
-        { name: "Performance Optimization", level: "Intermediate", description: "Speed & efficiency" }
+       
+        [
+        
+         
+          { name: "Role-Based Access", level: "Advanced", description: "Secure route and permission control" },
+          { name: "Authentication & Authorization", level: "Advanced", description: "JWT-based session handling and identity verification" },
+          { name: "Performance Optimization", level: "Intermediate", description: "Improving application speed and efficiency" },
+          { name: "Containerization (Docker)", level: "Intermediate", description: "Portable and consistent development environments" },
+          { name: "Database Optimization", level: "Advanced", description: "Indexing, query planning, and schema tuning" },
+          { name: "Real-Time Systems", level: "Intermediate", description: "WebSocket-based collaborative features" }
+        ]
+        
       ]
     }
   ];
@@ -110,7 +124,7 @@ export const TechStack = () => {
             Technology Arsenal
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A comprehensive toolkit mastered through AI collaboration and strategic learning
+            A comprehensive toolkit mastered.
           </p>
         </motion.div>
 
@@ -196,7 +210,7 @@ export const TechStack = () => {
             Continuous Evolution
           </h3>
           <p className="text-gray-300 leading-relaxed mb-4">
-            My technology stack isn't just a list of tools—it's a living ecosystem that grows through AI-assisted learning. 
+            My technology stack isn't just a list of tools—it's a living ecosystem that grows learning. 
             Each project teaches me new patterns, each challenge reveals new possibilities, and each AI interaction 
             deepens my understanding of what's possible.
           </p>

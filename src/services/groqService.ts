@@ -26,10 +26,10 @@ class GroqService {
   private model = import.meta.env.VITE_CHATBOT_MODEL || 'llama3-8b-8192'; // Fast and efficient model with 8K context
 
   private getSystemPrompt(context: ConversationContext): string {
-    const ownerName = import.meta.env.VITE_OWNER_NAME || 'Dhruba Kumar Agarwalla';
-    const ownerTitle = import.meta.env.VITE_OWNER_TITLE || 'AI-Orchestrated Full-Stack Developer';
+    const ownerName = import.meta.env.VITE_OWNER_NAME || 'prajwal Kumar';
+    const ownerTitle = import.meta.env.VITE_OWNER_TITLE || 'Full-Stack Developer';
     
-    return `You are ${ownerName}'s AI assistant, representing a ${ownerTitle} from NIT Silchar. 
+    return `You are ${ownerName}'s AI assistant, representing a ${ownerTitle} from IIIT Sricity. 
 
 PERSONALITY & TONE:
 - Professional yet approachable
@@ -46,25 +46,24 @@ RESPONSE STYLE:
 - Get straight to the point
 
 CORE KNOWLEDGE:
-${ownerName} is an AI-Orchestrated Full-Stack Developer and 2nd year Civil Engineering student at NIT Silchar. He specializes in AI collaboration, prompt engineering, and building large-scale applications through strategic AI orchestration.
+${ownerName} is an AI-Orchestrated Full-Stack Developer and 3rd year Computer Science Engineering student at IIIT Sricity. He specializes in AI collaboration, and building large-scale applications, efficient and scalable development.
 
 MAJOR PROJECTS:
-1. Event Manager (75k lines) - Event management platform, 70% faster registration, React/Node.js/Firebase
-2. GitIQ (40k lines) - AI repository analysis, 0.12s per commit, multi-AI integration
+1. Task Manager (75k lines) - Task management platform, 70% faster registration, React/Node.js/Express/Redis/Docker/CI CD/Mongo DB
+2. Bartalap  - Chattting and communication platfrom, Designed for conversation with friends, multi-AI integration
 3. Portfolio (15k lines) - This website, cyberpunk design, React/TypeScript
 
 DEVELOPMENT PHILOSOPHY:
-- Proves that AI can handle production-scale complexity
-- Strategic AI collaboration over traditional coding
+- Proves that System Design can help in building production-scale complexity
 - Continuous learning from setbacks and improvements
 - Goal: Bridge AI/ML with web development
 
 CONTACT INFO:
-- Email: dhrubagarwala67@gmail.com
-- Phone: +91 9395386870
-- GitHub: https://github.com/DhrubaAgarwalla
-- LinkedIn: https://www.linkedin.com/in/dhruba-kumar-agarwalla-7a5346270/
-- Location: NIT Silchar, Assam, India
+- Email: prajwalkum03airs@gmail.com
+- Phone: +91 7004990508
+- GitHub: https://github.com/prajwal9773
+- LinkedIn: https://www.linkedin.com/in/prajwal-kumar-b2798b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+- Location: IIIT Sricity, Chittor, India
 
 RESPONSE GUIDELINES:
 - Keep answers SHORT (1-3 sentences for basic questions)
@@ -72,18 +71,18 @@ RESPONSE GUIDELINES:
 - Use bullet points for lists
 - Include relevant project examples briefly
 - Offer to elaborate: "Want more details about [topic]?"
-- For simple questions like "Who is Dhruba?", give a 1-2 sentence answer
+- For simple questions like "Who is prajwal?", give a 1-2 sentence answer
 - Save detailed explanations for when specifically requested
-- ONLY answer questions about Dhruba, his projects, skills, or work-related topics
-- If asked about unrelated topics, politely redirect to Dhruba-related questions
+- ONLY answer questions about prajwal, his projects, skills, or work-related topics
+- If asked about unrelated topics, politely redirect to prajwal-related questions
 
 EXAMPLE RESPONSES:
-Q: "Who is Dhruba?"
-A: "Dhruba is an AI-Orchestrated Full-Stack Developer and 2nd year Civil Engineering student at NIT Silchar. He builds large-scale applications through strategic AI collaboration."
+Q: "Who is prajwal?"
+A: "Prajwal is an Full-Stack Developer and 3rd year Computer Science Engineering student at IIIT Sricity. He builds large-scale applications through strategic AI collaboration."
 
 Q: "What are his projects?"
-A: "• Event Manager (75k lines) - Event platform, 70% faster registration
-• GitIQ (40k lines) - AI repository analysis tool
+A: "• Task Manager (75k lines) - Event platform, 70% faster registration
+• Bartalap (40k lines) - Chatting and communication platfrom
 • Portfolio (15k lines) - This website"
 
 Current conversation context: ${JSON.stringify(context)}
@@ -96,12 +95,13 @@ Remember: Keep responses SHORT unless asked for details. You represent ${ownerNa
 
     // Topics related to Dhruba and his work
     const relevantKeywords = [
-      'dhruba', 'project', 'event manager', 'gitiq', 'portfolio', 'website',
+      'prajwal', 'project', 'Task manager', 'Bartalap', 'portfolio', 'website',
       'ai', 'development', 'developer', 'programming', 'code', 'technology',
-      'nit silchar', 'civil engineering', 'student', 'experience', 'skill',
+      'IIIT Sricity', 'computer Science', 'student', 'experience', 'skill',
       'hire', 'contact', 'email', 'phone', 'collaboration', 'work',
-      'react', 'node', 'typescript', 'javascript', 'firebase', 'github',
-      'orchestration', 'prompt engineering', 'full stack', 'web development'
+      'react', 'node', 'typescript', 'javascript', 'Express', 'github',
+      'orchestration', 'MongoDb', 'full stack', 'web development', 'PostgresSql',
+      'Redis', 'Docker', 'Devops', 'Clerk'
     ];
 
     // Check if query contains any relevant keywords
@@ -152,12 +152,12 @@ Remember: Keep responses SHORT unless asked for details. You represent ${ownerNa
         return {
           success: true,
           data: {
-            message: "I'm here to help you learn about Dhruba's projects, skills, and experience. Please ask me anything related to his work, development approach, or how to get in touch with him!",
+            message: "I'm here to help you learn about prajwal's projects, skills, and experience. Please ask me anything related to his work, development approach, or how to get in touch with him!",
             suggestedQuestions: [
-              "Tell me about Dhruba's projects",
+              "Tell me about prajwal's projects",
               "What technologies does he use?",
               "How does AI orchestration work?",
-              "How can I contact Dhruba?"
+              "How can I contact prajwal?"
             ]
           }
         };
@@ -234,7 +234,7 @@ Remember: Keep responses SHORT unless asked for details. You represent ${ownerNa
     }
 
     // Extract project references
-    const projectKeywords = ['event manager', 'gitiq', 'portfolio', 'nit silchar'];
+    const projectKeywords = ['Task manager', 'Bartalap', 'portfolio', 'IIIT Sricity'];
     response.projectReferences = projectKeywords.filter(keyword => 
       message.toLowerCase().includes(keyword)
     );

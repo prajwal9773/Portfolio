@@ -230,13 +230,13 @@ export const useChatbot = () => {
     if (!state.isOpen && state.messages.length === 0) {
       setTimeout(() => {
         addMessage(
-          "👋 Hi! I'm Dhruba's AI assistant. I can tell you about his projects, technical expertise, and development approach. What would you like to know?",
+          "👋 Hi! I'm prajwal's AI assistant. I can tell you about his projects, technical expertise, and development approach. What would you like to know?",
           'assistant',
           { suggestedQuestions: [
-            "Tell me about Dhruba's major projects",
+            "Tell me about prajwal's major projects",
             "How does AI orchestration work?",
             "What technologies does he specialize in?",
-            "How can I contact Dhruba?"
+            "How can I contact prajwal?"
           ]}
         );
       }, 500);
@@ -267,13 +267,13 @@ export const useChatbot = () => {
 
   // Predefined quick questions
   const quickQuestions = [
-    "What are Dhruba's major projects?",
+    "What are prajwal's major projects?",
     "How does AI orchestration work?",
-    "Tell me about the Event Manager",
-    "What's special about GitIQ?",
+    "Tell me about the Task Manager",
+    "What's special about Smart India Hackathon project",
     "How was this portfolio built?",
     "What technologies does he use?",
-    "How can I hire Dhruba?",
+    "How can I hire prajwal?",
     "What's his development process?"
   ];
 

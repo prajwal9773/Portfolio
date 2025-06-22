@@ -66,10 +66,10 @@ The chatbot has deep knowledge of:
 - Get instant, detailed responses
 
 ### Sample Questions
-- "Tell me about Dhruba's major projects"
+- "Tell me about prajwal's major projects"
 - "How does AI orchestration work?"
 - "What's the architecture of GitIQ?"
-- "How can I hire Dhruba?"
+- "How can I hire prajwal?"
 - "What technologies does he specialize in?"
 
 ## 🔒 Security & Privacy

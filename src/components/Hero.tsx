@@ -17,7 +17,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            DHRUBA KUMAR AGARWALLA
+            Prajwal KUMAR
           </motion.h1>
 
           <motion.h2
@@ -26,7 +26,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-rajdhani font-medium mb-6 text-cyber-purple"
           >
-            AI-Orchestrated Full-Stack Developer
+            Full-Stack Developer 
           </motion.h2>
 
           <motion.div
@@ -39,8 +39,7 @@ export const Hero = () => {
               Transforming Complex Ideas into Production Reality
             </h3>
             <p className="text-xs sm:text-sm md:text-lg text-gray-300 leading-relaxed mb-3 md:mb-4">
-              2nd Year Civil Engineering Student at NIT Silchar pioneering the future of AI-driven development.
-              I don't just write code - I orchestrate solutions through advanced AI collaboration.
+            I'm a tech enthusiast and builder passionate about creating scalable, real-world solutions through full-stack development.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-1 sm:gap-2 md:gap-4 text-center">
               <div className="glass-card p-1.5 sm:p-2 md:p-3">
@@ -69,7 +68,7 @@ export const Hero = () => {
             className="flex gap-2 sm:gap-3 md:gap-6 justify-center flex-wrap"
           >
             <motion.a
-              href="https://github.com/DhrubaAgarwalla"
+              href="https://github.com/prajwal9773"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}
@@ -81,7 +80,7 @@ export const Hero = () => {
             </motion.a>
 
             <motion.a
-              href="https://www.linkedin.com/in/dhruba-kumar-agarwalla-7a5346270/"
+              href="https://www.linkedin.com/in/prajwal-kumar-b2798b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}

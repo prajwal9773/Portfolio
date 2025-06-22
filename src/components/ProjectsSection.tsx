@@ -20,11 +20,13 @@ export const ProjectsSection = ({ projects, onProjectClick }: ProjectsSectionPro
           className="text-center mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-orbitron font-bold mb-4 sm:mb-6 text-cyber">
-            AI-Orchestrated Projects
+             Projects
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-            Witness the power of AI-driven development: 115,000+ lines of production-ready code
-            built through advanced prompt engineering and intelligent collaboration, including this very portfolio
+          I built a project management platform with features like drag-and-drop task cards,
+           real-time collaboration, and full authentication. The system is designed to streamline team workflows,
+            inspired by tools like Trello and Jira.
+
           </p>
         </motion.div>
 

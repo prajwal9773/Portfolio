@@ -272,7 +272,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isProjectModalOpen = false }) => {
                   <Zap className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-orbitron font-bold text-white text-sm">Dhruba AI Assistant</h3>
+                  <h3 className="font-orbitron font-bold text-white text-sm">Prajwal AI Assistant</h3>
                   <p className="text-xs text-gray-400">AI-Orchestrated Developer Expert</p>
                 </div>
               </div>
@@ -300,7 +300,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ isProjectModalOpen = false }) => {
                     <div className="text-center py-8">
                       <Bot className="w-12 h-12 text-cyber-blue mx-auto mb-4" />
                       <p className="text-gray-400 text-sm mb-4">
-                        Hi! I'm Dhruba's AI assistant. Ask me anything about his projects and expertise!
+                        Hi! I'm prajwal's AI assistant. Ask me anything about his projects and expertise!
                       </p>
                       <div className="grid grid-cols-1 gap-2">
                         {quickQuestions.slice(0, 4).map((question, index) => (

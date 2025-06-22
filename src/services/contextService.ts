@@ -8,38 +8,39 @@ class ContextService {
   private cacheExpiry = 30 * 60 * 1000; // 30 minutes
 
   private projectsData: Record<string, Partial<ProjectContext>> = {
-    'NITS-Event-Managment': {
-      id: 'event-manager',
-      name: 'NIT Silchar Event Manager',
-      description: '75,000+ lines of AI-orchestrated code creating a comprehensive event management platform',
-      technologies: ['React', 'Node.js', 'Firebase', 'Google Sheets API', 'Recharts', 'Cloudinary', 'QR Code System'],
-      lines: 75000,
-      githubUrl: 'https://github.com/DhrubaAgarwalla/NITS-Event-Managment',
-      demoUrl: 'https://nits-event-managment.vercel.app/',
+    'Planity': {
+      id: 'task-manager',
+      name: 'Collaborative Task Management Platform',
+      description: 'A full-featured project management tool inspired by Trello and Jira with real-time collaboration',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Redis', 'JWT', 'Socket.io', 'Docker', 'Tailwind CSS'],
+      lines: 30000,  // Estimated based on project scope
+      githubUrl: 'https://github.com/prajwal9773/FDFSD',
+      demoUrl: 'https://planity-1.onrender.com/',
       highlights: [
-        '75,000+ lines of AI-orchestrated code',
-        'Reduced event registration time by 70%',
-        'Real-time QR code attendance system with email automation',
-        'Google Sheets integration with automated data pipeline',
-        'Role-based access control (Admin, Club, Participant)',
-        'Built in 3-4 weeks with $0 budget through AI collaboration'
+        'Drag-and-drop task cards with real-time updates',
+        'Role-based access control and full user authentication',
+        'Board-based organization similar to Trello/Jira',
+        'MongoDB + Redis powered backend with Docker containerization',
+        'Socket.io-based real-time collaboration features',
+        'Responsive UI with Tailwind CSS and custom modals/forms'
       ]
     },
-    'GitIQ': {
-      id: 'gitiq',
-      name: 'GitIQ - AI Repository Insights',
-      description: '40,000+ lines of intelligent GitHub analysis tool with multi-AI provider integration',
-      technologies: ['Next.js 14', 'TypeScript', 'Groq AI', 'Google Gemini', 'HuggingFace', 'Recharts', 'GitHub API'],
-      lines: 40000,
-      githubUrl: 'https://github.com/DhrubaAgarwalla/GitIQ',
-      demoUrl: 'https://git-iq.vercel.app/',
+    'ChartSync': {
+      id: 'chartsync',
+      name: 'ChartSync - Real-Time Chat & Collaboration Platform',
+      description: 'Real-time collaborative chatting and charting system using Socket.io and WebSockets',
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'WebSockets', 'Cloudinary', 'DaisyUI'],
+      lines: 25000,  // Estimated
+      githubUrl: 'https://github.com/prajwal9773/ChartSync',
+      demoUrl: '',  // You can update with the actual deployed link if available
       highlights: [
-        '40,000+ lines built in less than a week',
-        'Multi-AI provider integration (Groq, Gemini, HuggingFace)',
-        'Ultra-fast processing: 0.12s per commit analysis',
-        'Advanced commit categorization and pattern recognition',
-        'Real-time repository health scoring',
-        'Over-delivered: Created enterprise-level tool for club project'
+        'Real-time bi-directional communication using Socket.io',
+        'Collaborative chart editing with persistent state',
+        'Low-latency WebSocket-based architecture for seamless UX',
+        'Cloudinary integration for optimized media handling',
+        'Scalable MongoDB-based backend with efficient query performance',
+        'Modular and responsive UI built with React.js and DaisyUI',
+        'Supports multi-user sessions and collaborative workflows'
       ]
     },
     'stellar-code-lab': {
@@ -47,7 +48,7 @@ class ContextService {
       name: 'AI-Orchestrated Portfolio',
       description: 'This revolutionary portfolio website showcasing the future of AI-driven development',
       technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite', 'shadcn/ui'],
-      lines: 15000,
+      lines: 15000,  // Estimated based on typical modern portfolio structure
       githubUrl: 'https://github.com/DhrubaAgarwalla/stellar-code-lab',
       demoUrl: 'https://portfolio-dhruba.vercel.app/',
       highlights: [
@@ -59,7 +60,8 @@ class ContextService {
         'Built through strategic AI collaboration and prompt engineering'
       ]
     }
-  };
+  }
+  ;
 
   async getProjectContext(projectId: string): Promise<APIResponse<ProjectContext>> {
     try {
@@ -143,13 +145,13 @@ class ContextService {
 
     // Detect if query is about specific project
     const projectKeywords = {
-      'event manager': 'NITS-Event-Managment',
-      'nit silchar': 'NITS-Event-Managment',
-      'gitiq': 'GitIQ',
-      'git iq': 'GitIQ',
-      'repository insights': 'GitIQ',
-      'portfolio': 'stellar-code-lab',
-      'website': 'stellar-code-lab'
+      'Project Management': 'Trello, jira',
+      'SIH': 'National Hackathon',
+      'Bartalap': 'Chatting',
+      'Chatting': 'Bartalap',
+      'Communicate': 'Chattting',
+      'Task management': 'Jira like worknest',
+      ' portfolio website': 'Personal Website'
     };
 
     const lowerQuery = query.toLowerCase();
@@ -231,23 +233,24 @@ class ContextService {
 
     if (lowerQuery.includes('project') || lowerQuery.includes('work')) {
       suggestions.push(
-        "Tell me about the Event Manager project",
-        "What's special about GitIQ?",
-        "How was this portfolio website built?"
+        "Tell me about the project Manager project",
+        "What's special about Hackathon?",
+        "How was this portfolio website built?",
+        "What is Bartalap project"
       );
     }
 
     if (lowerQuery.includes('technical') || lowerQuery.includes('code')) {
       suggestions.push(
-        "What technologies does Dhruba use?",
+        "What technologies does prajwal use?",
         "How does the AI orchestration work?",
-        "Show me the architecture of GitIQ"
+        "Show me the architecture of Bartalap"
       );
     }
 
     if (lowerQuery.includes('ai') || lowerQuery.includes('artificial intelligence')) {
       suggestions.push(
-        "How does Dhruba collaborate with AI?",
+        "How does prajwal collaborate with AI?",
         "What's the AI development methodology?",
         "Which AI providers are used in projects?"
       );

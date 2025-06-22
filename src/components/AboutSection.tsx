@@ -3,28 +3,23 @@ import { Brain, Code, Zap, Target, Award, Lightbulb } from "lucide-react";
 
 export const AboutSection = () => {
   const achievements = [
-    {
-      icon: <Code className="w-6 h-6" />,
-      title: "115,000+ Lines",
-      description: "AI-orchestrated code across two major projects",
-      color: "cyber-blue"
-    },
+  
     {
       icon: <Zap className="w-6 h-6" />,
-      title: "Ultra-Fast Development",
-      description: "75K lines in 3-4 weeks, 40K lines in <1 week",
+      title: "Selected Among top 50 teams",
+      description: "Scale91 fintech hackathon",
       color: "cyber-green"
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "$0 Budget",
-      description: "Maximum impact with zero financial investment",
+      title: "Runners up",
+      description: "International healthcare hackathon winner",
       color: "cyber-purple"
     },
     {
       icon: <Award className="w-6 h-6" />,
       title: "2nd Place Winner",
-      description: "CSS Hacks Hackathon, NIT Silchar CS Department",
+      description: "Smart India Hackathon",
       color: "cyber-yellow"
     }
   ];
@@ -43,7 +38,7 @@ export const AboutSection = () => {
     {
       step: "03",
       title: "AI Collaboration",
-      description: "Strategic prompt engineering with multiple AI tools and IDE integrations"
+      description: "Strategic help  AI tools"
     },
     {
       step: "04",
@@ -67,7 +62,7 @@ export const AboutSection = () => {
             The AI Revolution
           </h2>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-            Pioneering the future of development through intelligent AI collaboration and strategic prompt engineering
+            Pioneering the future of development through intelligent AI collaboration.
           </p>
         </motion.div>
 
@@ -83,8 +78,8 @@ export const AboutSection = () => {
           >
             <div className="relative">
               <motion.img
-                src="/Dhrub.jpg"
-                alt="Dhruba Kumar Agarwalla"
+                src="/Prajwal.jpg"
+                alt="Prajwal Kumar"
                 className="w-48 h-64 sm:w-56 sm:h-72 md:w-64 md:h-80 lg:w-full lg:h-auto lg:max-w-xs rounded-2xl object-cover border-4 border-cyber-blue/30 shadow-2xl"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.3 }}
@@ -119,17 +114,18 @@ export const AboutSection = () => {
             </div>
 
             <p className="text-gray-300 leading-relaxed mb-4">
-              As a 2nd year Civil Engineering student at NIT Silchar, I discovered the transformative power of AI in February 2025.
-              What started as curiosity evolved into mastery - proving that with the right approach, AI can handle production-scale complexity.
+            Prajwal Kumar is a passionate Computer Science student at IIIT Sricity with a strong foundation in backend development 
+            and full-stack web technologies. He enjoys building real-world applications, especially with the MERN stack, and has 
+            contributed to several complex team projects involving authentication systems, drag-and-drop UIs, and real-time collaboration tools
             </p>
             <p className="text-gray-300 leading-relaxed mb-4">
-              I don't just use AI; I orchestrate it. Through advanced prompt engineering, strategic error handling, and continuous
-              monitoring, I've built enterprise-level applications that rival traditional development approaches - all while learning
-              from setbacks and constantly improving my methodology.
+            Beyond academics, Prajwal has experience with cloud infrastructure, containerization using Docker,
+             and has explored domains like 3D point cloud registration and geospatial analysis for 5G optimization.
+              He was a runner-up at the Smart India Hackathon and has completed multiple certifications
+             in machine learning and web developmen
             </p>
             <p className="text-gray-300 leading-relaxed">
-              My goal? To bridge AI/ML with web development, creating solutions that push the boundaries of what's possible when
-              human creativity meets artificial intelligence.
+            Prajwal enjoys solving system design problems and is keen on making tech impactful and scalable
             </p>
           </motion.div>
         </div>
@@ -233,9 +229,8 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-orbitron font-bold text-white">Future Vision</h3>
           </div>
           <p className="text-gray-300 leading-relaxed mb-4">
-            I envision a future where AI/ML seamlessly integrates with web development, creating intelligent applications 
-            that adapt, learn, and evolve. My goal is to master AI/ML fundamentals while continuing to push the boundaries 
-            of what's possible through human-AI collaboration.
+          My goal is to build impactful tech products that solve real-world problems at scale.
+           I aim to lead innovative projects that blend practical utility with cutting-edge technology.
           </p>
           <p className="text-cyber-blue font-medium">
             "Building tomorrow's solutions today, one AI collaboration at a time."
